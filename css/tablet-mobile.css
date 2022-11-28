@@ -1,0 +1,150 @@
+/* Media screen för tablet */
+
+@media screen and (max-width: 991px) {
+    
+    .wrapper {
+        column-gap: 0;
+        row-gap: 0;
+        display: grid;
+        grid-template-areas:
+        "header header header"
+        "main main main"
+        "main main main"
+        "footer footer footer"
+    } 
+
+    header {
+        position: fixed;
+    }
+
+    .header-section {
+        grid-area: header;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "dropdown logo"
+    }
+
+    aside {
+        display: none;
+    }
+
+    .dropdown {
+        display: contents;
+        display: grid;
+        justify-content: flex-start;
+        align-items: center;
+        top: 0.4rem;
+    }
+
+    .logo {
+        display: grid;
+        place-items: center;
+    }
+
+    .a-s-logo {
+        width: 60%;
+    }
+
+    .main-section {
+        padding-top: 8rem;
+    }
+
+    .weekdays p {
+        padding-right: 1rem;
+    }
+
+    .icons { 
+        justify-content: center;
+    }
+
+
+    .row {
+        display: flex;
+        flex-direction: column;
+        padding-top: 9rem;
+    }
+
+}
+
+/* Media screen för mobil */
+
+@media screen and (max-width: 767px) {
+    
+    .wrapper {
+        column-gap: 0;
+        row-gap: 0;
+        display: grid;
+        grid-template-areas:
+        "header header header"
+        "main main main"
+        "main main main"
+        "footer footer footer"
+    }
+
+    .header-section {
+        grid-area: header;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "dropdown logo"
+    }
+
+    .main-section {
+        padding-top: 5.5rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    aside {
+        display: none;
+    }
+
+    .dropdown-content {
+        top: 3.7rem;
+    }
+
+    .footer-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .a-s-logo {
+        width: 90%;
+    }
+
+    .opening-hours {
+        padding-bottom: 2rem;
+    }
+
+    .find-us {
+        padding-bottom: 2rem;
+    }
+
+    .row {
+        padding-top: 7rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    /* p */
+
+    .weekdays p {
+        padding-right: 3rem;
+    }
+
+    .copyright p {
+        font-size: 10px;
+    }
+
+    .flex p {
+        font-size: 14px;
+    }
+
+    .info-restrictions p {
+        font-size: 9px;
+    }
+
+}
