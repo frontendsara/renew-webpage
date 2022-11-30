@@ -2,6 +2,8 @@ Grupp: Sara Karlsson och Lisa Marie Andersson
 
 Vi har valt att modernisera hemsidan för ett danskt café som heter Atelier September. 
 
+DEMO [här](https://frontendsara.github.io/renew-webpage/).
+
 https://cafeatelierseptember.com/
 
 
